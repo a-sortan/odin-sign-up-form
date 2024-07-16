@@ -3,16 +3,27 @@
   src: url(./Norse-Bold.otf);
 }
 
+:root {
+  --primary: #596D48;
+  --red: #b91c1c;
+}
+
+section {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
 aside {
-  /* background-color: aquamarine; */
-  width: 35vw;
+  flex-basis: 30%;
+  position: relative;
 }
 
 .logo {
   background-color: rgba(0, 0, 0, 0.5);
   position: absolute;
   top: 25vh;
-  width: 35vw;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -28,7 +39,8 @@ aside {
 
 figure {
   overflow: hidden;
-  height: 100vh;
+  min-height: 100vh;
+  height: 100%;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -46,6 +58,83 @@ figcaption {
   text-align: center;
 }
 
-a {
+a#login {
+  color: var(--primary);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.attribution {
   color: white;
+}
+
+main {
+  flex-basis: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 32px;
+  background-color: #f4f4f5;
+}
+
+main > div {
+  padding: 40px;
+  min-width: 800px;
+}
+
+main div:first-child> p {
+  font-size: 1.4rem;
+  font-weight: bold;
+  max-width: 800px;
+  margin: 40px 0;
+}
+
+form > div {
+  padding: 40px;
+  background-color: white;
+  box-shadow: 0px 6px 15px -8px rgba(0,0,0,0.1);
+}
+
+form label {
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  word-spacing: 0.2rem;
+  color: #09090b;
+  font-size: 0.8rem;
+}
+
+form input {
+  border: 1px solid#E5E7EB;
+  border-radius: 4px;
+  color: #09090b;
+}
+
+form div div {
+  max-width: 800px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  column-gap: 64px;
+}
+
+form div p {
+  flex-basis: 35%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.2rem;
+  padding: 16px 0;
+}
+
+form button {
+  margin: 32px;
+  background-color: var(--primary);
+  padding: 12px 44px;
+  color: white;
+  border-radius: 8px;
+  border: none;
+  font-weight: bold;
+}
+
+input[type="password"]:invalid {
+  border-color: var(--red);
 }

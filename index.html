@@ -8,17 +8,61 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <aside>
-    <div class="logo">
-      <img class="logo-img" src="./odin-lined.png" alt="odin drawing" width="100">
-      <h1>odin</h1>
-    </div>
-    
-  <figure>
-    <img src="./halie-west-25xggax4bSA-unsplash.jpg" alt="Fern plant in close up photography" >
-    <figcaption><small>Photo by <a href="https://unsplash.com/@haliewestphoto?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Halie West</a> on <a href="https://unsplash.com/photos/green-leaf-plant-in-close-up-photography-25xggax4bSA?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a></small></figcaption>
-  </figure>
-  </aside>
+  <section>
+    <aside>
+      <div class="logo">
+        <img class="logo-img" src="./odin-lined.png" alt="odin drawing" width="100">
+        <h1>odin</h1>
+      </div>
+      <figure>
+        <img src="./halie-west-25xggax4bSA-unsplash.jpg" alt="Fern plant in close up photography" >
+        <figcaption><small>Photo by <a class="attribution" href="https://unsplash.com/@haliewestphoto?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Halie West</a> on <a class="attribution" href="https://unsplash.com/photos/green-leaf-plant-in-close-up-photography-25xggax4bSA?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a></small></figcaption>
+      </figure>
+    </aside>
+    <main>
+      <div>
+        <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up <em>now</em> to get you started.</p>
+        <p>You <em>know</em> you want to.</p>
+      </div>
+      <form action="">
+        <div>
+          <h3>Let's do this!</h3>
+          <div>
+            <p>
+              <label for="first_name" >First Name</label>
+              <input type="text" id="first_name" name="first_name" placeholder="Thor">
+            </p>
+            <p>
+              <label for="last_name" >Last Name</label>
+              <input type="text" id="last_name" name="last_name" placeholder="Odinson">
+            </p>
+            <p>
+              <label for="email" >email</label>
+              <input type="email" id="email" name="email" placeholder="email@domain.com">
+            </p>
+            <p>
+              <label for="phone" >Phone number</label>
+              <input type="tel" id="phone" name="phone" placeholder="Enter your phone">
+            </p>
+            <p>
+              <label for="password" >Password</label>
+              <input required type="password" id="password" name="password">
+            </p>
+            <p>
+              <label for="confirm_password
+              confirm_password" >Confirm Password</label>
+              <input type="password" id="confirm_password" name="confirm_password">
+            </p>
+          </div>
+        </div>
+
+        <button>Create Account</button>
+      </form>
+      <div>
+        <p>Already have an account? <a id="login" href="#">Log In</a></p> 
+      </div>
+    </main>
+  </section>
   
 </body>
 </html>
